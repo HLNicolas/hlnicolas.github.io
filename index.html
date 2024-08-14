@@ -1,12 +1,32 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Redirecting</title>
+  </head>
+  <body>
+  Redirecting...
+  </body>
+  <script>
+  if (window.location.search == ""){
+    window.location.href = "https://github.com/ewerx/x-redirect/";
+  } else {
+    const queryString = window.location.search;
+    window.location.href = queryString.split("://")[0].substr(1) + "://" + queryString.split("://")[1];
+    window.close();
+  };
+  </script>
+</html>
+
+
+<!--
+
+<!DOCTYPE html>
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<!--
-Tinker Template
-http://www.templatemo.com/tm-506-tinker
--->
+
 		<title>NicolasHL</title>
 		<meta name="description" content="NicolasHL official website" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -54,7 +74,6 @@ http://www.templatemo.com/tm-506-tinker
 							><em>N</em>icolas</a
 						>
 					</div>
-					<!--/.navbar-header-->
 					<div id="main-nav" class="collapse navbar-collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="#" class="scroll-top">Home</a></li>
@@ -86,13 +105,9 @@ http://www.templatemo.com/tm-506-tinker
 							</li>
 						</ul>
 					</div>
-					<!--/.navbar-collapse-->
 				</nav>
-				<!--/.navbar-->
 			</div>
-			<!--/.container-->
 		</div>
-		<!--/.header-->
 
 		<div class="parallax-content baner-content" id="home">
 			<div class="container">
@@ -591,12 +606,6 @@ http://www.templatemo.com/tm-506-tinker
 		</div>
 
 		<div id="map">
-			<!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-        -->
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15605.621312313515!2d-76.97355423265445!3d-12.084380113608399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c700756229f5%3A0xb03452cad64217d4!2sLos%20Inkas%20Golf%20Club!5e0!3m2!1ses!2spe!4v1584044029515!5m2!1ses!2spe"
 				width="100%"
@@ -728,14 +737,11 @@ http://www.templatemo.com/tm-506-tinker
 			}
 		</script>
 
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
 		<script src="/__/firebase/7.10.0/firebase-app.js"></script>
 
-		<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 		<script src="/__/firebase/7.10.0/firebase-analytics.js"></script>
-
-		<!-- Initialize Firebase -->
 		<script src="/__/firebase/init.js"></script>
 	</body>
 </html>
+
+-->
